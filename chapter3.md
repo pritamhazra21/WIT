@@ -120,3 +120,18 @@ Next, we send the cookie in the HTTP header using the Set-Cookie header field. T
 When the user's browser receives this response, it will store the cookie on the user's computer. The cookie will be sent back to the server with subsequent requests made by the user, allowing the server to retrieve and use the stored information.
 
 Remember to adjust the code based on your specific web framework or server configuration, as the process of setting cookies may vary depending on the environment you are working in.
+
+
+# JavaScript (4L):
+## Basics,
+## Statements, comments, variable, comparison,
+condition, switch, loop, break. Object – string, array,
+Boolean, reg-ex. Function, Errors, Validation.
+
+
+
+Java Applets (2L):
+Container Class, Components, Applet Life Cycle,
+Update method;
+Parameter passing applet,
+Applications.
