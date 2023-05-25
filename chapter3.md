@@ -52,7 +52,30 @@ print $person{"name"};   # accessing the value associated with the key "name" (p
 These are the basic variable types in Perl. Variables in Perl are dynamically typed, meaning that they can hold values of different types, and their types can change during runtime. The my keyword is used to declare variables with limited scope within a block or subroutine.
 
 
-Condition, Loop, Array,
+## Condition, Loop, Array,
+
+Conditions:
+In Perl, you can use conditional statements to make decisions based on certain conditions. The if, elsif, else, and unless keywords are commonly used for conditionals. Here's an example:
+```
+my $age = 25;
+
+if ($age < 18) {
+    print "You are underage.";
+}
+elsif ($age >= 18 && $age < 65) {
+    print "You are an adult.";
+}
+else {
+    print "You are a senior citizen.";
+}
+```
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/c0ba7b12-524b-4213-a52e-7296848646ec)
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/82de6a6f-236f-4922-9b09-28dcee5a58d4)
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/abe6552c-1c25-4b61-813f-e305cb9ccb82)
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/af84a5e3-68e3-4fd2-9f29-c8a92c2d0153)
+
+
+
 Implementing data structure, Hash, String, Regular
 Expression,
 File handling, I/O handling.
