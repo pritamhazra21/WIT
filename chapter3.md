@@ -90,3 +90,33 @@ else {
 ![image](https://github.com/pritamhazra21/WIT/assets/75198912/1585525c-de8c-44aa-a987-a051238629fb)
 ![image](https://github.com/pritamhazra21/WIT/assets/75198912/8666196d-3717-4935-95a3-bf9a794a4b78)
 ![image](https://github.com/pritamhazra21/WIT/assets/75198912/d1525a40-d0fd-456e-aa73-09166eaa2f0a)
+
+# Cookies (1L):
+## Definition of cookies,
+
+Cookies are small pieces of data that are stored on a user's computer by a website they visit. They are commonly used in web development to enable various functionalities and enhance the user experience. Cookies are created by the web server and sent to the user's browser, which then stores the cookie on the user's computer.
+
+## Create and Store a cookie with example.
+```
+use CGI::Cookie;
+
+# Create a new cookie
+my $cookie = CGI::Cookie->new(
+    -name    => 'username',
+    -value   => 'JohnDoe',
+    -expires => '+1d',  # Expires in 1 day
+);
+
+# Store the cookie in the HTTP header
+print "Set-Cookie: $cookie\n";
+print "Content-Type: text/html\n\n";
+print "Cookie has been set!";
+
+```
+In this example, we use the CGI::Cookie module, which is a Perl module that provides functions for handling cookies. We create a new cookie object using the new() method, specifying the cookie name (username), value (JohnDoe), and expiration time (1 day from now).
+
+Next, we send the cookie in the HTTP header using the Set-Cookie header field. The cookie is printed using the print statement with the Set-Cookie prefix. Note that this code assumes you are using Perl's CGI module for web programming.
+
+When the user's browser receives this response, it will store the cookie on the user's computer. The cookie will be sent back to the server with subsequent requests made by the user, allowing the server to retrieve and use the stored information.
+
+Remember to adjust the code based on your specific web framework or server configuration, as the process of setting cookies may vary depending on the environment you are working in.
