@@ -83,8 +83,41 @@ HTTP is a fundamental protocol for web browsing and data exchange on the Interne
 
 
 ## Review of TCP/IP (1L):
-Features, Segment, Three-Way Handshaking, Flow
-Control, Error Control, Congestion control, IP
+## Features,
+
+The TCP/IP protocol suite, which stands for Transmission Control Protocol/Internet Protocol, is a set of communication protocols used for the internet and many private networks. Here are some key features of TCP/IP:
+
+Packet Switching: TCP/IP is designed for packet-switched networks, where data is divided into smaller packets for efficient transmission. Each packet contains a header with addressing and control information, allowing it to be independently routed across the network.
+
+Connection-Oriented Communication: TCP, one of the protocols in the TCP/IP suite, provides connection-oriented communication. It establishes a reliable, virtual circuit-like connection between the sender and receiver, ensuring ordered and error-free delivery of data. This is achieved through mechanisms like acknowledgement, sequencing, and flow control.
+
+Connectionless Communication: UDP, another protocol in the TCP/IP suite, provides connectionless communication. It is a simpler and faster protocol that does not establish a connection before transmitting data. UDP is used for applications where real-time data transfer is important, such as multimedia streaming or online gaming.
+
+IP Addressing: TCP/IP uses IP addresses to uniquely identify devices on a network. IPv4 (Internet Protocol version 4) is the most widely used addressing scheme and consists of 32-bit addresses expressed in dotted-decimal notation (e.g., 192.168.0.1). IPv6 (Internet Protocol version 6) is the newer addressing scheme that uses 128-bit addresses and provides a larger address space to accommodate the growing number of devices on the internet.
+
+Routing: TCP/IP includes routing protocols that determine the optimal path for data to travel across the network. Routing protocols enable routers to exchange information and dynamically update routing tables, ensuring efficient and reliable delivery of packets.
+
+Layered Architecture: TCP/IP follows a layered architecture, which helps in organizing and modularizing the various protocols and their functions. The architecture consists of multiple layers, such as the Network Interface Layer, Internet Layer, Transport Layer, and Application Layer. Each layer performs specific tasks and interacts with adjacent layers to facilitate end-to-end communication.
+
+Internet Protocols: TCP/IP includes various protocols for specific purposes. Some notable protocols in the suite include:
+
+HTTP (Hypertext Transfer Protocol): Used for accessing and transferring web content.
+SMTP (Simple Mail Transfer Protocol): Used for sending and receiving email.
+FTP (File Transfer Protocol): Used for transferring files between systems.
+DNS (Domain Name System): Converts domain names (e.g., www.example.com) to IP addresses.
+Scalability and Interoperability: TCP/IP is highly scalable and supports a vast number of devices and networks, ranging from small local networks to the entire internet. It also facilitates interoperability between different types of devices and operating systems, enabling seamless communication across heterogeneous networks.
+
+These features make TCP/IP a robust and flexible protocol suite for communication over networks, including the internet. It forms the foundation for most network communication today and enables a wide range of applications and services to operate efficiently and reliably.
+
+
+
+
+## Segment,
+## Three-Way Handshaking,
+## Flow Control,
+## Error Control,
+## Congestion control,
+## IP
 
 ## Datagram,
 
