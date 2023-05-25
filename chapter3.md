@@ -85,5 +85,8 @@ else {
 
 
 
-Regular Expression,
-File handling, I/O handling.
+## Regular Expression, File handling, I/O handling.
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/b6746f43-db10-4bc3-90ad-d9ebff852881)
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/1585525c-de8c-44aa-a987-a051238629fb)
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/8666196d-3717-4935-95a3-bf9a794a4b78)
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/d1525a40-d0fd-456e-aa73-09166eaa2f0a)
