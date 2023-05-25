@@ -126,6 +126,7 @@ A datagram is a self-contained packet of data transmitted over a network without
 
 ## IPv4 and IPv6.
 ![image](https://github.com/pritamhazra21/WIT/assets/75198912/b0188069-dde0-49d2-8c14-34a760e8f327)
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/a0f9d028-caae-46f1-b47b-3b7b339f7e54)
 
 ## IP Subnetting and addressing (1L):
 ## Classful and Classless Addressing,
