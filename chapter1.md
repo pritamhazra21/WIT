@@ -85,11 +85,127 @@ HTTP is a fundamental protocol for web browsing and data exchange on the Interne
 ## Review of TCP/IP (1L):
 Features, Segment, Three-Way Handshaking, Flow
 Control, Error Control, Congestion control, IP
-Datagram, IPv4
-and IPv6.
-IP Subnetting and addressing (1L):
-Classful and Classless Addressing, Subnetting. NAT,
-IP masquerading, IP tables.
+
+## Datagram,
+
+
+A datagram is a self-contained packet of data transmitted over a network without establishing a connection. It is an independent unit of information with its own header and payload. Datagram-based communication is connectionless and does not provide reliable delivery or sequencing guarantees. It is commonly used in protocols like UDP and follows a best-effort delivery model. Datagram networks are stateless and can handle variable packet sizes.
+
+## IPv4 and IPv6.
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/b0188069-dde0-49d2-8c14-34a760e8f327)
+
+## IP Subnetting and addressing (1L):
+## Classful and Classless Addressing,
+
+Classful addressing and classless addressing are two different approaches to assigning IP addresses within the Internet Protocol (IP) network.
+
+Classful Addressing:
+Classful addressing was the original method used in IPv4 for assigning IP addresses. It divided the IP address space into five classes: A, B, C, D, and E. The classes were defined based on the number of network and host bits within the IP address.
+Class A: Class A addresses have the first bit set to 0, and the next 7 bits represent the network ID. The remaining 24 bits are used for the host ID. This class allows for a large number of networks but fewer hosts per network.
+
+Class B: Class B addresses have the first two bits set to 10, and the next 14 bits represent the network ID. The remaining 16 bits are used for the host ID. Class B addresses provide a balance between the number of networks and the number of hosts per network.
+
+Class C: Class C addresses have the first three bits set to 110, and the next 21 bits represent the network ID. The remaining 8 bits are used for the host ID. Class C addresses allow for a large number of hosts but fewer networks.
+
+Class D: Class D addresses have the first four bits set to 1110. These addresses are reserved for multicast groups and are not used for traditional unicast communication.
+
+Class E: Class E addresses have the first four bits set to 1111. These addresses are reserved for experimental purposes and are not used in regular network communication.
+
+Classful addressing had limitations in terms of address allocation and flexibility. It resulted in inefficient utilization of IP address space and made it challenging to allocate addresses according to the actual needs of networks.
+
+Classless Addressing:
+Classless addressing, also known as Classless Inter-Domain Routing (CIDR), was introduced to overcome the limitations of classful addressing. It allows for a more flexible allocation of IP addresses by using variable-length subnet masks (VLSM) instead of fixed class boundaries.
+In classless addressing, the subnet mask can have any number of bits, enabling the creation of subnets of different sizes. This allows for efficient allocation of IP addresses based on the specific requirements of networks. Classless addressing eliminates the strict division of addresses into classes and allows for better address utilization.
+
+CIDR notation is commonly used in classless addressing to represent IP addresses and subnet masks. For example, 192.168.0.0/16 represents a Classless Inter-Domain Routing (CIDR) block where the first 16 bits are the network ID, and the remaining 16 bits are available for hosts.
+
+Classless addressing is the prevalent addressing scheme used in modern IP networks and has significantly improved the efficiency and scalability of IP address allocation compared to classful addressing.
+
+## Subnetting. 
+
+Subnetting is the process of dividing a larger network into smaller subnetworks, known as subnets. Subnetting allows for better management and allocation of IP addresses, improved network performance, and enhanced security. It is commonly used in IPv4 networks, although it can also be applied in IPv6 networks.
+
+Here's an overview of the subnetting process:
+
+1. Determining the Network Requirements: Before subnetting, you need to define the network requirements, such as the number of required subnets and the number of hosts per subnet. These requirements will help determine the subnet mask and the number of subnet bits needed.
+
+2. Choosing the Subnet Mask: The subnet mask determines the network portion and host portion of an IP address. It is represented by a series of 1s followed by 0s. In subnetting, the subnet mask is extended to include subnet bits, which identify the subnets within the larger network.
+
+3. Calculating the Number of Subnets and Hosts: Based on the network requirements, calculate the number of subnets and hosts needed. This information helps determine the number of subnet bits required in the subnet mask.
+
+4. Subnetting Process: The subnetting process involves borrowing bits from the host portion of the IP address to create the subnet portion. These borrowed bits increase the number of available subnets at the expense of reducing the number of host addresses per subnet.
+
++ Determine the number of subnet bits required based on the number of subnets needed. The formula is 2^n, where 'n' is the number of subnet bits required. The result should be equal to or greater than the required number of subnets.
+
++ Calculate the number of host bits available per subnet. This is obtained by subtracting the number of subnet bits from the total number of bits in the host portion of the IP address.
+
++ Create a subnetting table to keep track of the network, subnet mask, range of IP addresses for each subnet, and broadcast address.
+
+5. Assigning IP Addresses: Once the subnets are defined, you can assign IP addresses to each subnet. The network and subnet bits determine the network ID and subnet ID, while the remaining host bits are used to assign unique IP addresses to devices within each subnet.
+
+6. Updating Network Devices: After subnetting, you need to update the network devices (routers, switches, etc.) with the new subnet mask and subnet information. This ensures proper routing and communication between the subnets.
+
+Subnetting allows for efficient use of IP address space, improves network performance by reducing broadcast domains, and provides better security by segregating network traffic. It is a fundamental technique in network design and plays a crucial role in modern IP networks.
+
+## NAT
+
+NAT, or Network Address Translation, is a technique used in computer networks to allow multiple devices on a local network to share a single public IP address when connecting to the internet. NAT operates at the network layer of the TCP/IP protocol stack and enables the translation of IP addresses between the private network and the public network.
+
+Here's how NAT works:
+
+1. Private IP Addresses: In a local network, such as a home or office network, devices are assigned private IP addresses according to the RFC 1918 standards. These private IP addresses are not routable on the internet and are used only within the local network. Examples of private IP address ranges include 192.168.0.0/16, 10.0.0.0/8, and 172.16.0.0/12.
+
+2. Public IP Address: The network, typically provided by an Internet Service Provider (ISP), assigns a public IP address to the router or gateway that connects the local network to the internet. This public IP address is unique and routable on the internet.
+
+3. NAT Translation: When a device from the local network wants to communicate with a device on the internet, NAT translates the private IP address of the device to the public IP address of the router. It replaces the private IP address with the public IP address in the outgoing packets.
+
+4. Port Number Translation: NAT also performs port number translation, known as Port Address Translation (PAT) or Network Address Port Translation (NAPT). As multiple devices on the local network share the same public IP address, NAT assigns different port numbers to each device's outgoing packets. This allows for proper identification and routing of incoming packets back to the correct device within the local network.
+
+5. Translation Table: NAT maintains a translation table that keeps track of the mappings between private IP addresses, port numbers, and the corresponding public IP address and port numbers. This table is crucial for correctly forwarding incoming packets to the appropriate device.
+
+### NAT provides several benefits:
+
++ IP Address Conservation: By allowing multiple devices to share a single public IP address, NAT helps conserve the limited supply of public IP addresses.
+
++ Security: NAT acts as a barrier between the private network and the internet, effectively hiding the private IP addresses from external networks. This provides a level of security by obscuring the internal network structure.
+
++ Simplified Network Configuration: NAT simplifies network configuration by eliminating the need for unique public IP addresses for each device on the local network. It enables the use of private IP addresses, which can be assigned freely within the local network.
+
+### However, NAT also has some limitations:
+
++ Limited Inbound Connections: As NAT assigns different port numbers for incoming packets, it can create challenges for establishing direct inbound connections to devices within the local network. Additional configuration, such as port forwarding or DMZ (Demilitarized Zone) settings, may be required for certain applications or services.
+
++ Impact on Certain Network Protocols: Some network protocols, such as IPsec, may not work properly with NAT due to the translation of IP addresses and port numbers. Special considerations and configurations are often required to accommodate such protocols.
+
+NAT is widely used in home and small office networks where a limited number of public IP addresses are available. It enables these networks to connect to the internet and facilitates communication between devices on the local network and devices on the internet while providing a layer of security.
+
+## IP masquerading
+
+IP masquerading, also known as network address translation (NAT) masquerading or source NAT, is a technique used to hide the private IP addresses of devices within a local network when communicating with external networks, such as the internet. It allows multiple devices with private IP addresses to share a single public IP address.
+
+Here's how IP masquerading works:
+
+1.  Network: In a local network, devices are assigned private IP addresses that are not routable on the internet. These private IP addresses are typically in the ranges specified by RFC 1918, such as 192.168.0.0/16 or 10.0.0.0/8.
+
+2. Public IP Address: The network, usually provided by an internet service provider (ISP), assigns a public IP address to the router or gateway that connects the local network to the internet. This public IP address is routable on the internet and serves as the network's gateway to external networks.
+
+3. Address Translation: When a device within the local network initiates communication with an external network, such as accessing a website, the router performing IP masquerading modifies the packets' source IP addresses. It replaces the private IP address of the device with the public IP address of the router.
+
+4. Port Translation: Additionally, the router may also perform port translation, known as port address translation (PAT) or network address port translation (NAPT). It assigns a unique port number to each communication session, allowing multiple devices within the local network to share the same public IP address.
+
+5. Response Routing: When the external network responds to the communication initiated by a device in the local network, the router uses the port information to route the response back to the correct device within the local network. It translates the destination IP address and port back to the corresponding private IP address and port.
+
+By using IP masquerading, the private IP addresses of devices within the local network are concealed, and all communication appears to originate from the single public IP address assigned to the router. This technique provides benefits such as:
+
+1. Address Conservation: IP masquerading allows multiple devices to share a single public IP address, conserving the limited supply of public IP addresses.
+
+2. Security: It acts as a barrier between the internal network and the external network, making it more challenging for external entities to directly access devices within the local network.
+
+3. Simplified Network Configuration: Devices within the local network can use private IP addresses without requiring unique public IP addresses, simplifying network configuration.
+
+IP masquerading is commonly used in home and small office networks, where a limited number of public IP addresses are available. It enables devices within the local network to access the internet while providing a layer of security and address conservation.
+
+## IP tables.
 
 
 
