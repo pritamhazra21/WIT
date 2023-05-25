@@ -1,0 +1,58 @@
+
+PERL (3L):
+## Introduction,
+
+Perl (Practical Extraction and Reporting Language) is a programming language that has been widely used in web technology for many years. It was one of the first programming languages to be adopted for web development and has played a significant role in the evolution of the web.
+
+Perl is particularly well-suited for tasks involving text processing, data manipulation, and system administration. In the context of web development, Perl is commonly used for server-side scripting, where it runs on the web server and generates dynamic content that is then sent to the client's web browser.
+
+Some common uses of Perl in web technology include:
+
+CGI (Common Gateway Interface): Perl was one of the original languages used for writing CGI scripts. CGI allows web servers to execute programs or scripts and generate dynamic web content based on user input or other parameters.
+
+Web frameworks: Perl has various web frameworks available, such as Mojolicious, Dancer, and Catalyst. These frameworks provide a structure and set of tools for building web applications in Perl, simplifying the development process.
+
+Templating: Perl offers templating systems like Template Toolkit and Mason, which facilitate the separation of code and presentation in web applications. Templating allows developers to define reusable templates and insert dynamic data into them, making it easier to maintain and update web pages.
+
+Web scraping: Perl has long been favored for web scraping due to its powerful regular expression support and text-processing capabilities. Developers can use Perl to extract data from websites, automate data collection, or build web spiders or crawlers.
+
+System administration and automation: Perl's strengths in text processing and system interaction make it well-suited for tasks related to web server administration, log analysis, and automation of routine tasks.
+
+While Perl's popularity in web development has diminished in recent years with the rise of other languages like Python, Ruby, and JavaScript, it still has a dedicated user base and continues to be used in legacy systems or specific niches where its strengths are valued.
+
+## Variable, 
+
+
+In Perl, variables are created by using the dollar sign ($) symbol followed by the variable name. Perl has three main types of variables: scalars, arrays, and hashes.
+
+Scalars: Scalars are used to store single values. They can hold integers, floating-point numbers, strings, or boolean values. Here's an example:
+```
+my $name = "John";      # a scalar variable holding a string value
+my $age = 30;           # a scalar variable holding an integer value
+my $pi = 3.14159;       # a scalar variable holding a floating-point number
+my $isStudent = 1;      # a scalar variable holding a boolean value (1 for true, 0 for false)
+
+```
+Arrays: Arrays are used to store ordered lists of values. They are represented using the @ symbol followed by the array name. Individual elements in an array can be accessed using square brackets ([]). Here's an example:
+```
+my @fruits = ("apple", "banana", "orange");    # an array variable holding string values
+print $fruits[0];        # accessing the first element of the array (prints "apple")
+
+```
+Hashes: Hashes are used to store key-value pairs. They are represented using the % symbol followed by the hash name. Individual values in a hash can be accessed using curly braces ({}) and the corresponding key. Here's an example:
+```
+my %person = (
+    "name" => "John",
+    "age" => 30,
+    "occupation" => "Engineer"
+);
+print $person{"name"};   # accessing the value associated with the key "name" (prints "John")
+
+```
+These are the basic variable types in Perl. Variables in Perl are dynamically typed, meaning that they can hold values of different types, and their types can change during runtime. The my keyword is used to declare variables with limited scope within a block or subroutine.
+
+
+Condition, Loop, Array,
+Implementing data structure, Hash, String, Regular
+Expression,
+File handling, I/O handling.
