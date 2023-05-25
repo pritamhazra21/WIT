@@ -76,6 +76,14 @@ else {
 
 
 
-Implementing data structure, Hash, String, Regular
-Expression,
+## Implementing data structure, Hash, String,
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/3f99825e-0ab8-4653-8029-ee9c04912c32)
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/853757a6-8bbc-465a-b8a0-2f5014849997)
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/86d84427-8513-4f1f-a889-f1fc44503565)
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/a9fe35ed-bb28-4d8e-bcb3-f90d8c4ddd7b)
+
+
+
+
+Regular Expression,
 File handling, I/O handling.
