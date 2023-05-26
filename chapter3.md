@@ -634,7 +634,7 @@ These concepts provide an understanding of Boolean values, regular expressions (
 
 
 
-Java Applets (2L):
+## Java Applets (2L):
 Container Class, Components, Applet Life Cycle,
 Update method;
 Parameter passing applet,
