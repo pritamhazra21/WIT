@@ -65,8 +65,27 @@ The is given the 6 steps to write the RMI program.
 1. Create and start the client application
 
 
-Threats (1L):
-Malicious code-viruses, Trojan horses, worms; eavesdropping, spoofing, modification, denial of service attacks.
+## Threats (1L):
+## Malicious code-viruses, Trojan horses, worms; eavesdropping, spoofing, modification, denial of service attacks.
+
+Malicious code and various cyber threats pose significant risks to computer systems, networks, and individuals. Here are some common threats you mentioned:
+
+1. Viruses: These are self-replicating programs that can attach themselves to files and spread from one computer to another. Viruses can cause damage by corrupting or deleting files, disrupting system operations, or stealing personal information.
+
+1. Trojan Horses: These are malicious programs disguised as legitimate software. Once installed, Trojan horses can perform unauthorized actions, such as stealing sensitive information, modifying files, or providing unauthorized access to the attacker.
+
+1. Worms: Worms are similar to viruses but can spread independently without requiring user interaction. They exploit vulnerabilities in computer systems and networks to propagate rapidly, causing network congestion, system slowdowns, or unauthorized access.
+
+1. Eavesdropping: Also known as snooping or sniffing, eavesdropping involves intercepting and monitoring network traffic to capture sensitive information. Attackers can exploit insecure networks or unencrypted communications to gain unauthorized access to data, including passwords, financial details, or confidential conversations.
+
+1. Spoofing: Spoofing refers to impersonating or masquerading as someone or something else to deceive users or gain unauthorized access. This can include IP spoofing (manipulating the source IP address of network packets), email spoofing (forging the sender's email address), or DNS spoofing (redirecting users to malicious websites).
+
+1. Modification: Modification attacks involve altering data or code to manipulate its integrity, leading to unauthorized changes in system behavior or compromising the confidentiality and accuracy of information. This can include unauthorized modifications of files, databases, or system configurations.
+
+1. Denial of Service (DoS) Attacks: DoS attacks aim to disrupt or deny access to a system, network, or service, making them inaccessible to legitimate users. Attackers flood the target with excessive traffic, overwhelming its resources and causing system failures or slowdowns. Distributed Denial of Service (DDoS) attacks involve multiple compromised systems coordinating the attack.
+
+These threats highlight the importance of implementing robust security measures, such as antivirus software, firewalls, encryption, secure network protocols, and user awareness training, to mitigate the risks and protect against cyber attacks. Regular software updates and patches are also crucial to address known vulnerabilities.
+
 Network security techniques (2L): 
 Password and Authentication;
 VPN, 
