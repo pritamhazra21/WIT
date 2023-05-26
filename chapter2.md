@@ -330,9 +330,27 @@ Here are some key points about XHTML:
 
 It's worth noting that HTML5 is now the recommended standard for web development, and XHTML usage has decreased significantly. However, understanding XHTML can still be valuable for working with legacy systems or when XML compatibility is required.
 
-CGI Scripts (1L):
-Introduction, Environment Variable, GET and POST
-Methods.
+## CGI Scripts (1L):
+#### Introduction, Environment Variable
+CGI (Common Gateway Interface) scripts are programs that run on a web server to process and generate dynamic content in response to a client's request. CGI scripts allow web servers to interact with external programs or scripts and generate dynamic web pages based on user input or other parameters.
+
+1. Introduction:
+   CGI scripts act as a bridge between the web server and external programs or scripts. When a client sends a request to the server that requires dynamic content, the server invokes the CGI script to process the request. The script then performs certain actions, such as database queries, calculations, or file operations, and generates a response that is sent back to the client.
+
+2. Environment Variable:
+   Environment variables are a crucial component of CGI scripts. They provide information about the server, the request, and the client to the script, allowing it to adapt its behavior accordingly. Some commonly used environment variables in CGI scripts include:
+
+   - `CONTENT_TYPE`: Specifies the type of data sent to the server, such as "application/x-www-form-urlencoded" for form data or "multipart/form-data" for file uploads.
+   - `CONTENT_LENGTH`: Indicates the length (in bytes) of the data sent to the server.
+   - `REQUEST_METHOD`: Specifies the HTTP method used in the client request, such as "GET," "POST," "PUT," "DELETE," etc.
+   - `QUERY_STRING`: Contains the query string portion of the URL if the request was made using the GET method.
+   - `REMOTE_ADDR`: Provides the IP address of the client making the request.
+   - `HTTP_USER_AGENT`: Indicates the user agent (web browser or client application) used by the client.
+   - `HTTP_COOKIE`: Contains any cookies sent by the client.
+
+   These environment variables, along with others, are made available to the CGI script by the web server. The script can access them to extract relevant information about the request and use it for processing.
+
+CGI scripts provide a flexible and powerful way to generate dynamic content on the web. By utilizing environment variables and interacting with external programs or scripts, CGI scripts enable the server to respond dynamically to user requests, process data, and generate customized web pages or other types of responses.
 
 
 ## CGI GET POST method
