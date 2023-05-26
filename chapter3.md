@@ -54,25 +54,92 @@ These are the basic variable types in Perl. Variables in Perl are dynamically ty
 
 ## Condition, Loop, Array,
 
-Conditions:
-In Perl, you can use conditional statements to make decisions based on certain conditions. The if, elsif, else, and unless keywords are commonly used for conditionals. Here's an example:
-```
-my $age = 25;
 
-if ($age < 18) {
-    print "You are underage.";
-}
-elsif ($age >= 18 && $age < 65) {
-    print "You are an adult.";
-}
-else {
-    print "You are a senior citizen.";
-}
-```
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/c0ba7b12-524b-4213-a52e-7296848646ec)
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/82de6a6f-236f-4922-9b09-28dcee5a58d4)
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/abe6552c-1c25-4b61-813f-e305cb9ccb82)
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/af84a5e3-68e3-4fd2-9f29-c8a92c2d0153)
+
+1. Conditions:
+   In Perl, you can use conditional statements to make decisions based on certain conditions. The `if`, `elsif`, `else`, and `unless` keywords are commonly used for conditionals. Here's an example:
+
+   ```perl
+   my $age = 25;
+
+   if ($age < 18) {
+       print "You are underage.";
+   }
+   elsif ($age >= 18 && $age < 65) {
+       print "You are an adult.";
+   }
+   else {
+       print "You are a senior citizen.";
+   }
+   ```
+
+2. Loops:
+   Perl provides different types of loops to repeat a block of code. The `for`, `foreach`, `while`, `do-while`, and `until` loops are commonly used in Perl. Here are a few examples:
+
+   - `for` loop:
+
+     ```perl
+     for (my $i = 1; $i <= 10; $i++) {
+         print "$i ";
+     }
+     ```
+
+   - `foreach` loop (for iterating over an array):
+
+     ```perl
+     my @fruits = ("apple", "banana", "orange");
+
+     foreach my $fruit (@fruits) {
+         print "$fruit ";
+     }
+     ```
+
+   - `while` loop:
+
+     ```perl
+     my $count = 1;
+
+     while ($count <= 5) {
+         print "$count ";
+         $count++;
+     }
+     ```
+
+3. Arrays:
+   Arrays in Perl allow you to store ordered lists of values. You can access and manipulate array elements using indices. Here are a few examples:
+
+   - Creating an array:
+
+     ```perl
+     my @numbers = (1, 2, 3, 4, 5);
+     ```
+
+   - Accessing array elements:
+
+     ```perl
+     my $first_element = $numbers[0];     # accessing the first element (1)
+     my $third_element = $numbers[2];     # accessing the third element (3)
+     ```
+
+   - Modifying array elements:
+
+     ```perl
+     $numbers[1] = 10;                    # changing the second element to 10
+     ```
+
+   - Looping through an array:
+
+     ```perl
+     foreach my $number (@numbers) {
+         print "$number ";
+     }
+     ```
+
+   - Array functions:
+
+     Perl provides various built-in functions to manipulate arrays, such as `push`, `pop`, `shift`, `unshift`, `splice`, `join`, and more. These functions help you add or remove elements, manipulate the array's structure, and perform common operations.
+
+These are just the basics of conditions, loops, and arrays in Perl. Perl offers a wide range of features and functions to work with these concepts, allowing you to perform complex logic and data manipulation tasks.
 
 
 
