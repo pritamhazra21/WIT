@@ -454,23 +454,99 @@ Certainly! Here's a detailed explanation of JavaScript statements, comments, var
      }
      ```
 
-7. Loops:
-   - Loops are used to repeatedly execute a block of code.
-   - Examples: 
-     - For loop:
-       ```javascript
-       for (var i = 0; i < 5; i++) {
-           console.log(i);
-       }
-       ```
-     - While loop:
-       ```javascript
-       var i = 0;
-       while (i < 5) {
-           console.log(i);
-           i++;
-       }
-       ```
+7. JavaScript provides several types of loops to repeatedly execute a block of code. Here are the commonly used loop structures in JavaScript:
+
+1. For Loop:
+   - The for loop is used to iterate over a block of code a fixed number of times.
+   - Syntax:
+     ```javascript
+     for (initialization; condition; increment/decrement) {
+         // Code to be executed
+     }
+     ```
+   - Example:
+     ```javascript
+     for (var i = 0; i < 5; i++) {
+         console.log(i);
+     }
+     // Output: 0 1 2 3 4
+     ```
+
+2. While Loop:
+   - The while loop is used to execute a block of code repeatedly as long as a specified condition is true.
+   - Syntax:
+     ```javascript
+     while (condition) {
+         // Code to be executed
+     }
+     ```
+   - Example:
+     ```javascript
+     var i = 0;
+     while (i < 5) {
+         console.log(i);
+         i++;
+     }
+     // Output: 0 1 2 3 4
+     ```
+
+3. Do...While Loop:
+   - The do...while loop is similar to the while loop, but the code block is executed at least once before checking the condition.
+   - Syntax:
+     ```javascript
+     do {
+         // Code to be executed
+     } while (condition);
+     ```
+   - Example:
+     ```javascript
+     var i = 0;
+     do {
+         console.log(i);
+         i++;
+     } while (i < 5);
+     // Output: 0 1 2 3 4
+     ```
+
+4. For...in Loop:
+   - The for...in loop is used to iterate over the properties of an object.
+   - Syntax:
+     ```javascript
+     for (var property in object) {
+         // Code to be executed
+     }
+     ```
+   - Example:
+     ```javascript
+     var person = {
+         name: "John",
+         age: 30,
+         city: "New York"
+     };
+     for (var prop in person) {
+         console.log(prop + ": " + person[prop]);
+     }
+     // Output: name: John, age: 30, city: New York
+     ```
+
+5. For...of Loop:
+   - The for...of loop is used to iterate over iterable objects like arrays or strings.
+   - Syntax:
+     ```javascript
+     for (var element of iterable) {
+         // Code to be executed
+     }
+     ```
+   - Example:
+     ```javascript
+     var arr = [1, 2, 3];
+     for (var element of arr) {
+         console.log(element);
+     }
+     // Output: 1 2 3
+     ```
+
+These are the main loop structures in JavaScript. They provide different ways to control the flow and repetition of code based on specific conditions.
 
 8. Break:
    - The break statement is used to exit a loop or switch statement.
