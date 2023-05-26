@@ -25,32 +25,34 @@ While Perl's popularity in web development has diminished in recent years with t
 
 In Perl, variables are created by using the dollar sign ($) symbol followed by the variable name. Perl has three main types of variables: scalars, arrays, and hashes.
 
-Scalars: Scalars are used to store single values. They can hold integers, floating-point numbers, strings, or boolean values. Here's an example:
-```
+1. Scalars: Scalars are used to store single values. They can hold integers, floating-point numbers, strings, or boolean values. Here's an example:
+
+```perl
 my $name = "John";      # a scalar variable holding a string value
 my $age = 30;           # a scalar variable holding an integer value
 my $pi = 3.14159;       # a scalar variable holding a floating-point number
 my $isStudent = 1;      # a scalar variable holding a boolean value (1 for true, 0 for false)
+```
 
-```
-Arrays: Arrays are used to store ordered lists of values. They are represented using the @ symbol followed by the array name. Individual elements in an array can be accessed using square brackets ([]). Here's an example:
-```
+2. Arrays: Arrays are used to store ordered lists of values. They are represented using the `@` symbol followed by the array name. Individual elements in an array can be accessed using square brackets ([]). Here's an example:
+
+```perl
 my @fruits = ("apple", "banana", "orange");    # an array variable holding string values
 print $fruits[0];        # accessing the first element of the array (prints "apple")
+```
 
-```
-Hashes: Hashes are used to store key-value pairs. They are represented using the % symbol followed by the hash name. Individual values in a hash can be accessed using curly braces ({}) and the corresponding key. Here's an example:
-```
+3. Hashes: Hashes are used to store key-value pairs. They are represented using the `%` symbol followed by the hash name. Individual values in a hash can be accessed using curly braces ({}) and the corresponding key. Here's an example:
+
+```perl
 my %person = (
     "name" => "John",
     "age" => 30,
     "occupation" => "Engineer"
 );
 print $person{"name"};   # accessing the value associated with the key "name" (prints "John")
-
 ```
-These are the basic variable types in Perl. Variables in Perl are dynamically typed, meaning that they can hold values of different types, and their types can change during runtime. The my keyword is used to declare variables with limited scope within a block or subroutine.
 
+These are the basic variable types in Perl. Variables in Perl are dynamically typed, meaning that they can hold values of different types, and their types can change during runtime. The `my` keyword is used to declare variables with limited scope within a block or subroutine.
 
 ## Condition, Loop, Array,
 
