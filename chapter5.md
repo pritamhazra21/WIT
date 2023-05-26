@@ -85,7 +85,18 @@ RTCP (RTP Control Protocol) is a protocol used in conjunction with RTP (Real-tim
 
 RTSP (Real-Time Streaming Protocol) is a network protocol used for controlling the delivery of real-time multimedia streams over IP networks. It enables clients to remotely control playback of media files or live streams from a server. RTSP establishes a session and facilitates communication for commands like play, pause, seek, and stop. It is commonly used for streaming applications, video surveillance, and video-on-demand services.
 
-Streaming media, Codec and Plugins, IPTV.
+### Streaming media, Codec and Plugins, IPTV.
+
+Streaming media, Codec and Plugins, and IPTV are interconnected concepts related to the delivery and playback of media content over the internet. Here's a brief overview of each:
+
+1. Streaming media: Streaming media refers to the process of delivering multimedia content, such as audio and video, over the internet in a continuous stream. Instead of downloading the entire file before playback, streaming allows users to access and view the content in real-time without the need for local storage. Streaming enables seamless playback and on-demand access to a wide range of media content.
+
+2. Codec and Plugins: Codecs (Coder-Decoder) are software or hardware components that encode and decode media files to compress them for efficient transmission and decompress them for playback. Codecs are essential for streaming media as they ensure that the content is encoded and compressed in a format suitable for efficient transmission over the internet. Plugins, on the other hand, are additional software components that extend the functionality of web browsers or media players. They may be required to decode and play specific media formats or provide additional features for streaming media playback.
+
+3. IPTV (Internet Protocol Television): IPTV is a method of delivering television content over IP networks, such as the internet. Instead of traditional broadcast methods, IPTV uses IP-based networks to transmit television channels, on-demand videos, and interactive services. IPTV allows users to access a wide range of live TV channels and on-demand content using internet connectivity. It requires a dedicated IPTV service provider or an IPTV-enabled device to receive and decode the IPTV streams.
+
+Overall, streaming media enables real-time access and playback of multimedia content over the internet. Codecs and plugins ensure efficient encoding, decoding, and playback of media files. IPTV leverages IP networks to deliver television content, offering users more flexibility and access to a variety of channels and on-demand content.
+
 ## Search Engine and Web Crawler (2L):
 Definition, Meta data, 
 
