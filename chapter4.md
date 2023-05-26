@@ -39,11 +39,31 @@ The stub is an object, acts as a gateway for the client side. All the outgoing r
 #### skeleton
 The skeleton is an object, acts as a gateway for the server side object. All the incoming requests are routed through it. When the skeleton receives the incoming request, it does the following tasks:
 
-0. It reads the parameter for the remote method
+1. It reads the parameter for the remote method
 0. It invokes the method on the actual remote object, and
 0. It writes and transmits (marshals) the result to the caller.
 
 In the Java 2 SDK, an stub protocol was introduced that eliminates the need for skeletons. 
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/d894c92c-2903-4d26-98bc-843a1c196b8b)
+### Understanding requirements for the distributed applications
+If any application performs these tasks, it can be distributed application.
+
+1. The application need to locate the remote method
+1. It need to provide the communication with the remote objects, and
+1. The application need to load the class definitions for the objects.
+
+The RMI application have all these features, so it is called the distributed application.
+
+### Java RMI Example
+The is given the 6 steps to write the RMI program.
+
+1. Create the remote interface
+1. Provide the implementation of the remote interface
+1. Compile the implementation class and create the stub and skeleton objects using the rmic tool
+1. Start the registry service by rmiregistry tool
+1. Create and start the remote application
+1. Create and start the client application
+
 
 Threats (1L):
 Malicious code-viruses, Trojan horses, worms; eavesdropping, spoofing, modification, denial of service attacks.
