@@ -236,10 +236,112 @@ These are just some examples of how you can work with hashes and strings in Perl
 
 
 ## Regular Expression, File handling, I/O handling.
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/b6746f43-db10-4bc3-90ad-d9ebff852881)
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/1585525c-de8c-44aa-a987-a051238629fb)
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/8666196d-3717-4935-95a3-bf9a794a4b78)
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/d1525a40-d0fd-456e-aa73-09166eaa2f0a)
+
+1. Regular Expressions:
+   Regular expressions (regex) in Perl are powerful tools for pattern matching and text manipulation. Perl has robust support for regular expressions through built-in functions and special syntax. Here are some examples of using regular expressions in Perl:
+
+   - Pattern matching using the `=~` operator:
+
+     ```perl
+     my $string = "Hello, World!";
+     if ($string =~ /World/) {
+         print "Found 'World' in the string.";
+     }
+     ```
+
+   - Extracting substrings using capturing groups:
+
+     ```perl
+     my $string = "Hello, World!";
+     if ($string =~ /Hello, (.*)!/) {
+         my $name = $1;   # Captured substring inside parentheses
+         print "Hello, $name!";
+     }
+     ```
+
+   - Substituting patterns using the `s///` operator:
+
+     ```perl
+     my $string = "Hello, World!";
+     $string =~ s/World/Perl/;   # Substitute "World" with "Perl"
+     print $string;
+     ```
+
+   - Matching with modifiers and flags:
+
+     ```perl
+     my $string = "Hello, world!";
+     if ($string =~ /world/i) {   # Ignore case using 'i' modifier
+         print "Match found!";
+     }
+     ```
+
+   Perl offers many more features and functions for regular expressions, including character classes, quantifiers, anchors, assertions, and more. Regular expressions are extensively used for text parsing, validation, search and replace, and data extraction tasks in Perl.
+
+2. File Handling:
+   Perl provides various functions and operators to handle files, read and write data, and perform file operations. Here are some common file handling operations in Perl:
+
+   - Opening a file:
+
+     ```perl
+     open(my $filehandle, '<', 'filename.txt') or die "Cannot open the file: $!";
+     ```
+
+   - Reading data from a file:
+
+     ```perl
+     while (my $line = <$filehandle>) {
+         chomp $line;   # Remove newline character
+         print "$line\n";
+     }
+     ```
+
+   - Writing data to a file:
+
+     ```perl
+     open(my $filehandle, '>', 'output.txt') or die "Cannot open the file: $!";
+     print $filehandle "Hello, World!\n";
+     close $filehandle;
+     ```
+
+   - Appending data to a file:
+
+     ```perl
+     open(my $filehandle, '>>', 'filename.txt') or die "Cannot open the file: $!";
+     print $filehandle "New line of data\n";
+     close $filehandle;
+     ```
+
+   - File operations and checks:
+
+     ```perl
+     # Checking if a file exists
+     if (-e 'filename.txt') {
+         print "File exists!";
+     }
+
+     # Getting file size
+     my $filesize = -s 'filename.txt';
+     print "File size: $filesize bytes";
+     ```
+
+   Perl provides many more functions and operators for file handling, such as `seek`, `tell`, `rename`, `unlink`, directory operations, and file permissions.
+
+3. I/O Handling:
+   Perl provides several I/O handling mechanisms, including standard input/output and file handles. Here are a few examples:
+
+   - Standard input:
+
+     ```perl
+     my $input = <STDIN>;   # Reading input from the user
+     chomp $input;
+     ```
+
+   - Standard output:
+
+     ```perl
+     print "Hello, World!\n";   # Writing output to the console
+    
 
 # Cookies (1L):
 ## Definition of cookies,
