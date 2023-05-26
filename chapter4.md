@@ -141,6 +141,34 @@ This protocol is used to convey SSL-related alerts to the peer entity. Each mess
 
 ## Secure Shell (SSH).
 
+SSH(Secure Shell) is access credential that is used in the SSH Protocol. In other words, it is a cryptographic network protocol that is used for transferring encrypted data over network. It allows you to connect to a server, or multiple servers, without having you to remember or enter your password for each system that is to login remotely from one system into another. 
+
+It always comes in key pair: 
+ 
+
+1. Public key – Everyone can see it, no need to protect it. (for encryption function)
+2. Private key – Stays in computer, must be protected. (for decryption function)
+
+Key pairs can be of the following types: 
+ 
+1. User Key – If public key and private key remain with the user.
+1. Host Key – If public key and private key are on a remote system.
+1. Session key – Used when large amount of data is to be transmitted.
+
+How SSH Works ? 
+It uses asymmetric cipher for performing encryption and decryption. There are many encryption methods: rsa, dsa, ed25519 etc. 
+
+General procedure is :- 
+ 
+
++ Public keys from the local computers (system) are passed to the server which is to be accessed.
++ Server then identifies if the public key is registered.
++ If so, the server then creates a new secret key and encrypts it with the public key which was send to it via local computer.
++ This encrypted code is send to the local computer.
++ This data is unlocked by the private key of the system and is send to the server.
++ Server after receiving this data verifies the local computer.
++ SSH creates a route and all the encrypted data are transferred through it with no security issues.
+
 
 Firewall (1L):
 Introduction, 
