@@ -144,11 +144,94 @@ These are just the basics of conditions, loops, and arrays in Perl. Perl offers 
 
 
 ## Implementing data structure, Hash, String,
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/3f99825e-0ab8-4653-8029-ee9c04912c32)
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/853757a6-8bbc-465a-b8a0-2f5014849997)
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/86d84427-8513-4f1f-a889-f1fc44503565)
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/a9fe35ed-bb28-4d8e-bcb3-f90d8c4ddd7b)
 
+1. Hashes:
+   Hashes in Perl are used to store key-value pairs. They are implemented using the `%` symbol followed by the hash name. Here's an example:
+
+   ```perl
+   my %person = (
+       "name" => "John",
+       "age" => 30,
+       "occupation" => "Engineer"
+   );
+   ```
+
+   You can access and manipulate the values in a hash using the corresponding keys. Here are a few examples:
+
+   - Accessing values:
+
+     ```perl
+     my $name = $person{"name"};
+     my $age = $person{"age"};
+     ```
+
+   - Modifying values:
+
+     ```perl
+     $person{"occupation"} = "Developer";
+     ```
+
+   - Adding new key-value pairs:
+
+     ```perl
+     $person{"city"} = "New York";
+     ```
+
+   - Looping through a hash:
+
+     ```perl
+     foreach my $key (keys %person) {
+         my $value = $person{$key};
+         print "$key: $value\n";
+     }
+     ```
+
+2. Strings:
+   Perl provides powerful string manipulation capabilities. Here are some common operations you can perform on strings:
+
+   - Concatenation:
+
+     ```perl
+     my $string1 = "Hello";
+     my $string2 = "World";
+     my $result = $string1 . ", " . $string2;   # Concatenating strings
+     ```
+
+   - String interpolation:
+
+     ```perl
+     my $name = "John";
+     my $greeting = "Hello, $name!";            # String interpolation
+     ```
+
+   - Length of a string:
+
+     ```perl
+     my $string = "Hello";
+     my $length = length($string);              # Getting the length of a string
+     ```
+
+   - Substring extraction:
+
+     ```perl
+     my $string = "Hello, World!";
+     my $substring = substr($string, 7, 5);     # Extracting "World"
+     ```
+
+   - Pattern matching:
+
+     ```perl
+     my $string = "Hello, World!";
+     if ($string =~ /World/) {
+         print "Found 'World' in the string.";
+     }
+     ```
+
+   - String manipulation functions:
+
+     Perl provides a wide range of built-in functions for string manipulation, such as `index`, `rindex`, `split`, `join`, `uc`, `lc`, `substr`, `chomp`, `sprintf`, and many more. These functions allow you to perform tasks like searching, splitting, formatting, case conversions, and more.
+
+These are just some examples of how you can work with hashes and strings in Perl. Perl offers a rich set of features and functions for manipulating data structures and handling string operations, making it flexible and powerful for various programming tasks.
 
 
 
