@@ -99,6 +99,29 @@ IPsec, short for IP Security, is a set of protocols and standards used to secure
 
 ## security in electronic transaction, 
 
+Secure Electronic Transaction (SET) is a protocol and standard developed by Visa and Mastercard in the late 1990s to ensure secure online credit card transactions. While SET is not widely used today, it provides a conceptual framework for understanding security requirements in electronic transactions. Here are the key components of SET:
+
+1. Encryption and Digital Certificates: SET utilizes encryption to protect the confidentiality of data transmitted during electronic transactions. It uses symmetric and asymmetric encryption algorithms to secure communication channels between the buyer, merchant, and payment gateway. Digital certificates are used to authenticate the identities of the involved parties.
+
+2. Payment Card Issuers: SET involves the participation of payment card issuers, such as banks or financial institutions, that issue credit cards to customers. These issuers issue digital certificates to their customers, enabling secure communication and transaction authorization.
+
+3. Certificate Authorities (CAs): CAs are trusted third-party entities responsible for issuing digital certificates and ensuring the authenticity of the involved parties. They verify the identities of buyers, merchants, and payment gateways, and issue digital certificates that are used for secure communication and transaction authorization.
+
+4. Secure Payment Gateway: SET incorporates a secure payment gateway that facilitates the communication between the buyer, merchant, and payment card issuer. The payment gateway encrypts and securely transmits transaction data, including the payment information, to the payment card issuer for authorization and authentication.
+
+5. Dual-Key Cryptography: SET uses dual-key cryptography, which involves the use of both private and public keys. The buyer and merchant each have their own key pair. The private key remains with the owner, while the public key is shared and used for encryption. This enables secure communication and ensures that only the intended recipient can decrypt the information.
+
+6. Digital Signature: SET employs digital signatures to ensure the integrity and authenticity of electronic transactions. The buyer signs the transaction information using their private key, and the signature is verified by the payment card issuer using the buyer's public key. This ensures that the transaction data has not been tampered with and that it was indeed initiated by the buyer.
+
+SET was designed to address security concerns in electronic transactions, providing a robust framework for secure communication, authentication, and authorization. While SET has not gained widespread adoption, its concepts and principles have influenced the development of other secure transaction protocols and standards. Today, modern security technologies and protocols, such as SSL/TLS, tokenization, and advanced encryption algorithms, have evolved to provide secure electronic transactions in line with current industry practices.
+
+
+
+
+
+
+
+
 
 ## Secure Socket Layer (SSL),
 
