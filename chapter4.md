@@ -193,9 +193,20 @@ General procedure is :-
 + SSH creates a route and all the encrypted data are transferred through it with no security issues.
 
 
-Firewall (1L):
-Introduction, 
-Packet filtering, 
-Stateful, 
-Application layer, 
-Proxy.
+## Firewall (1L):
+### Introduction:
+A firewall is a network security device that acts as a barrier between an internal network and external networks, such as the internet. Its primary purpose is to monitor and control incoming and outgoing network traffic based on predetermined security rules. Firewalls help protect networks and systems from unauthorized access, malicious activities, and network-based threats.
+
+### Packet Filtering:
+Packet filtering is a basic form of firewall functionality. It operates at the network layer (Layer 3) of the OSI model and examines individual packets of data as they pass through the firewall. Packet filtering firewalls analyze the packet headers, including source and destination IP addresses, port numbers, and protocol information, to make decisions on whether to allow or block the packets based on predefined rules.
+
+### Stateful:
+Stateful firewalls, also known as dynamic packet filtering firewalls, go beyond packet filtering by maintaining the state or context of network connections. They keep track of the state of each network connection, including the source and destination IP addresses, port numbers, sequence numbers, and other connection-related information. Stateful firewalls allow incoming packets that are part of an established or related connection, while blocking others that do not match an existing connection or violate defined security policies.
+
+### Application Layer:
+Application layer firewalls operate at the highest layer (Layer 7) of the OSI model and provide more advanced inspection capabilities. They can analyze the content and context of network traffic at the application layer, understanding specific protocols, applications, and their associated vulnerabilities. Application layer firewalls offer granular control over network traffic, allowing or blocking based on application-specific rules, URLs, keywords, or even specific file types.
+
+### Proxy:
+Proxy firewalls act as intermediaries between internal and external networks, handling communication on behalf of the requesting client. When a client makes a request to access a resource, the proxy firewall initiates a separate connection to the target server and retrieves the requested content. This separation provides an additional layer of security by hiding the internal network details and IP addresses from external entities. Proxy firewalls can also perform deep inspection of traffic, filtering out malicious content and providing additional security features like caching and content filtering.
+
+Firewalls can be implemented as hardware devices, software applications, or a combination of both. They form an essential part of network security strategies, helping organizations enforce security policies, control access to resources, and protect against unauthorized access and malicious activities. Firewalls are often deployed in conjunction with other security measures, such as intrusion detection/prevention systems (IDS/IPS), antivirus software, and virtual private networks (VPNs), to create a layered defense approach.
