@@ -113,6 +113,28 @@ These features make TCP/IP a robust and flexible protocol suite for communicatio
 
 
 ## Segment,
+
+In TCP (Transmission Control Protocol), a segment is a unit of data exchanged between two hosts over a TCP connection. It is the protocol's basic unit of data transmission. The TCP segment consists of a TCP header followed by the data payload.
+
+The TCP header contains control information that facilitates the reliable delivery and sequencing of data. Some of the key fields in the TCP header include:
+
+- Source Port and Destination Port: These fields identify the source and destination processes or applications on the hosts that are communicating.
+
+- Sequence Number: This field is used to ensure the correct ordering of segments during transmission. It assigns a unique sequence number to each TCP segment.
+
+- Acknowledgment Number: This field acknowledges the receipt of segments from the sender. It indicates the next expected sequence number the receiver is expecting.
+
+- Window Size: This field specifies the size of the receiver's window and is used for flow control, as mentioned earlier.
+
+- TCP Flags: These flags include control bits such as SYN (synchronize), ACK (acknowledge), FIN (finish), and RST (reset), among others. They help manage the TCP connection and perform various functions during the TCP handshake, data transmission, and connection termination.
+
+Following the TCP header, the segment includes the actual data payload, which can range from zero bytes (in certain control packets) to a maximum size determined by the Maximum Segment Size (MSS) negotiated during the TCP handshake.
+
+TCP segments are encapsulated within IP (Internet Protocol) packets for transmission over IP-based networks. At the receiving end, TCP segments are extracted from the IP packets, and the TCP layer reassembles them into the original data stream for the application to process.
+
+Overall, TCP segments serve as the building blocks for reliable and ordered data transmission in TCP connections, allowing for the efficient and error-free transfer of data across networks.
+
+
 ## Three-Way Handshaking,
 
 In the context of TCP (Transmission Control Protocol), a "three-way handshake" refers to the initial connection establishment process between a client and a server. It is a three-step procedure used to establish a reliable and synchronized connection before data transmission can begin. Here's an overview of the steps involved:
@@ -219,7 +241,12 @@ The sender sends multiple frames based upon the sending-window size, without rec
 
 
 ## Congestion control,
+
+Congestion control is a network mechanism that manages and prevents congestion in computer networks. It regulates the flow of data to avoid overwhelming the network, prevent packet loss, and maintain optimal performance. TCP implements congestion control through techniques such as slow start, congestion avoidance, congestion notification, and congestion detection. It adjusts the sending rate based on network conditions, reduces congestion window, and responds to congestion signals from the receiver. The goal is to ensure fair and efficient resource utilization while maintaining stable network performance.
+
 ## IP
+
+In short, IP (Internet Protocol) is a network layer protocol used in the TCP/IP suite. It provides logical addressing with IP addresses and routing functionality to deliver data packets across networks. IP divides data into packets, uses IP addresses for source and destination identification, and routers for forwarding packets. It supports both IPv4 and IPv6 versions and is responsible for the core functionality of addressing and routing in computer networks.
 
 ## Datagram,
 
