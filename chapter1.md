@@ -151,6 +151,73 @@ The working principle of this protocol can be described as follows −
 + The sender sends multiple frames in a sequence, without waiting for acknowledgment. When its sending window is filled, it waits for acknowledgment. On receiving acknowledgment, it advances the window and transmits the next frames, according to the number of acknowledgments received.
 
 ## Error Control,
+
+Error control in data link layer is the process of detecting and correcting data frames that have been corrupted or lost during transmission.
+
+In case of lost or corrupted frames, the receiver does not receive the correct data-frame and sender is ignorant about the loss. Data link layer follows a technique to detect transit errors and take necessary actions, which is retransmission of frames whenever error is detected or frame is lost. The process is called Automatic Repeat Request (ARQ).
+
+### Phases in Error Control
+The error control mechanism in data link layer involves the following phases −
+
++ Detection of Error − Transmission error, if any, is detected by either the sender or the receiver.
+
++ Acknowledgment − acknowledgment may be positive or negative.
+
+    - Positive ACK − On receiving a correct frame, the receiver sends a positive acknowledge.
+
+    - Negative ACK − On receiving a damaged frame or a duplicate frame, the receiver sends a negative acknowledgment back to the sender.
+
++ Retransmission − The sender maintains a clock and sets a timeout period. If an acknowledgment of a data-frame previously transmitted does not arrive before the timeout, or a negative acknowledgment is received, the sender retransmits the frame.
+
+Error Control Techniques
+There are three main techniques for error control −
+
+
+
+#### Stop and Wait ARQ
+
+This protocol involves the following transitions −
+
+A timeout counter is maintained by the sender, which is started when a frame is sent.
+
+If the sender receives acknowledgment of the sent frame within time, the sender is confirmed about successful delivery of the frame. It then transmits the next frame in queue.
+
+If the sender does not receive the acknowledgment within time, the sender assumes that either the frame or its acknowledgment is lost in transit. It then retransmits the frame.
+
+If the sender receives a negative acknowledgment, the sender retransmits the frame.
+
+#### Go-Back-N ARQ
+
+The working principle of this protocol is −
+
+The sender has buffers called sending window.
+
+The sender sends multiple frames based upon the sending-window size, without receiving the acknowledgment of the previous ones.
+
+The receiver receives frames one by one. It keeps track of incoming frame’s sequence number and sends the corresponding acknowledgment frames.
+
+After the sender has sent all the frames in window, it checks up to what sequence number it has received positive acknowledgment.
+
+If the sender has received positive acknowledgment for all the frames, it sends next set of frames.
+
+If sender receives NACK or has not receive any ACK for a particular frame, it retransmits all the frames after which it does not receive any positive ACK.
+
+#### Selective Repeat ARQ
+
+Both the sender and the receiver have buffers called sending window and receiving window respectively.
+The sender sends multiple frames based upon the sending-window size, without receiving the acknowledgment of the previous ones.
+
+The receiver also receives multiple frames within the receiving window size.
+
+The receiver keeps track of incoming frame’s sequence numbers, buffers the frames in memory.
+
+It sends ACK for all successfully received frames and sends NACK for only frames which are missing or damaged.
+
+The sender in this case, sends only packet for which NACK is received.
+
+
+
+
 ## Congestion control,
 ## IP
 
