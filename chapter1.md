@@ -128,6 +128,28 @@ Once this three-way handshake is completed, the TCP connection is considered est
 It's worth noting that this three-way handshake is a crucial part of TCP's reliability and ensures that both ends of the connection are ready and synchronized before actual data transmission begins.
 
 ## Flow Control,
+
+Flow control is a mechanism used in computer networks to manage the rate of data transmission between a sender and receiver. It ensures that the sender does not overwhelm the receiver with data, preventing congestion and potential packet loss.
+
+Data link layer uses feedback based flow control mechanisms. There are two main techniques −
+#### Stop and Wait
+This protocol involves the following transitions −
+
++ The sender sends a frame and waits for acknowledgment.
+
++ Once the receiver receives the frame, it sends an acknowledgment frame back to the sender.
+
++ On receiving the acknowledgment frame, the sender understands that the receiver is ready to accept the next frame. So it sender the next frame in queue.
+
+#### Sliding Window
+This protocol improves the efficiency of stop and wait protocol by allowing multiple frames to be transmitted before receiving an acknowledgment.
+
+The working principle of this protocol can be described as follows −
+
++ Both the sender and the receiver has finite sized buffers called windows. The sender and the receiver agrees upon the number of frames to be sent based upon the buffer size.
+
++ The sender sends multiple frames in a sequence, without waiting for acknowledgment. When its sending window is filled, it waits for acknowledgment. On receiving acknowledgment, it advances the window and transmits the next frames, according to the number of acknowledgments received.
+
 ## Error Control,
 ## Congestion control,
 ## IP
