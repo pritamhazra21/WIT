@@ -1,5 +1,6 @@
-# Introduction
+# Chapter 1
 
+## Introduction
 ## Internet
 Internet is a global network that connects billions of computers across the world with each other and to the World Wide Web. It uses standard internet protocol suite (TCP/IP) to connect billions of computer users worldwide. It is set up by using cables such as optical fibers and other wireless and networking technologies. At present, internet is the fastest mean of sending or exchanging information and data between computers across the world.
 
