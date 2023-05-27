@@ -178,42 +178,42 @@ There are three main techniques for error control −
 
 This protocol involves the following transitions −
 
-A timeout counter is maintained by the sender, which is started when a frame is sent.
++ A timeout counter is maintained by the sender, which is started when a frame is sent.
 
-If the sender receives acknowledgment of the sent frame within time, the sender is confirmed about successful delivery of the frame. It then transmits the next frame in queue.
++ If the sender receives acknowledgment of the sent frame within time, the sender is confirmed about successful delivery of the frame. It then transmits the next frame in queue.
 
-If the sender does not receive the acknowledgment within time, the sender assumes that either the frame or its acknowledgment is lost in transit. It then retransmits the frame.
++ If the sender does not receive the acknowledgment within time, the sender assumes that either the frame or its acknowledgment is lost in transit. It then retransmits the frame.
 
-If the sender receives a negative acknowledgment, the sender retransmits the frame.
++ If the sender receives a negative acknowledgment, the sender retransmits the frame.
 
 #### Go-Back-N ARQ
 
 The working principle of this protocol is −
 
-The sender has buffers called sending window.
++ The sender has buffers called sending window.
 
-The sender sends multiple frames based upon the sending-window size, without receiving the acknowledgment of the previous ones.
++ The sender sends multiple frames based upon the sending-window size, without receiving the acknowledgment of the previous ones.
 
-The receiver receives frames one by one. It keeps track of incoming frame’s sequence number and sends the corresponding acknowledgment frames.
++ The receiver receives frames one by one. It keeps track of incoming frame’s sequence number and sends the corresponding acknowledgment frames.
 
-After the sender has sent all the frames in window, it checks up to what sequence number it has received positive acknowledgment.
++ After the sender has sent all the frames in window, it checks up to what sequence number it has received positive acknowledgment.
 
-If the sender has received positive acknowledgment for all the frames, it sends next set of frames.
++ If the sender has received positive acknowledgment for all the frames, it sends next set of frames.
 
-If sender receives NACK or has not receive any ACK for a particular frame, it retransmits all the frames after which it does not receive any positive ACK.
++ If sender receives NACK or has not receive any ACK for a particular frame, it retransmits all the frames after which it does not receive any positive ACK.
 
 #### Selective Repeat ARQ
 
-Both the sender and the receiver have buffers called sending window and receiving window respectively.
++ Both the sender and the receiver have buffers called sending window and receiving window respectively.
 The sender sends multiple frames based upon the sending-window size, without receiving the acknowledgment of the previous ones.
 
-The receiver also receives multiple frames within the receiving window size.
++ The receiver also receives multiple frames within the receiving window size.
 
-The receiver keeps track of incoming frame’s sequence numbers, buffers the frames in memory.
++ The receiver keeps track of incoming frame’s sequence numbers, buffers the frames in memory.
 
-It sends ACK for all successfully received frames and sends NACK for only frames which are missing or damaged.
++ It sends ACK for all successfully received frames and sends NACK for only frames which are missing or damaged.
 
-The sender in this case, sends only packet for which NACK is received.
++ The sender in this case, sends only packet for which NACK is received.
 
 
 
