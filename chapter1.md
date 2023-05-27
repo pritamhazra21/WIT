@@ -114,6 +114,19 @@ These features make TCP/IP a robust and flexible protocol suite for communicatio
 
 ## Segment,
 ## Three-Way Handshaking,
+
+In the context of TCP (Transmission Control Protocol), a "three-way handshake" refers to the initial connection establishment process between a client and a server. It is a three-step procedure used to establish a reliable and synchronized connection before data transmission can begin. Here's an overview of the steps involved:
+
+1. SYN (Synchronize): The client initiates the connection by sending a SYN packet to the server. The SYN packet contains a random sequence number to initiate the connection.
+
+2. SYN-ACK (Synchronize-Acknowledgment): Upon receiving the SYN packet, the server responds with a SYN-ACK packet. The SYN-ACK packet contains an acknowledgment number that confirms the receipt of the client's SYN packet. Additionally, the server generates its own random sequence number.
+
+3. ACK (Acknowledgment): Finally, the client acknowledges the server's SYN-ACK packet by sending an ACK packet. This packet contains the acknowledgment number for the server's SYN packet, confirming the successful establishment of the connection.
+
+Once this three-way handshake is completed, the TCP connection is considered established, and both the client and server can begin exchanging data packets.
+
+It's worth noting that this three-way handshake is a crucial part of TCP's reliability and ensures that both ends of the connection are ready and synchronized before actual data transmission begins.
+
 ## Flow Control,
 ## Error Control,
 ## Congestion control,
