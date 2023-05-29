@@ -254,9 +254,7 @@ In short, IP (Internet Protocol) is a network layer protocol used in the TCP/IP 
 
 A datagram is a self-contained packet of data transmitted over a network without establishing a connection. It is an independent unit of information with its own header and payload. Datagram-based communication is connectionless and does not provide reliable delivery or sequencing guarantees. It is commonly used in protocols like UDP and follows a best-effort delivery model. Datagram networks are stateless and can handle variable packet sizes.
 
-## IPv4 and IPv6.
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/b0188069-dde0-49d2-8c14-34a760e8f327)
-![image](https://github.com/pritamhazra21/WIT/assets/75198912/a0f9d028-caae-46f1-b47b-3b7b339f7e54)
+
 ## IPV4 Header 
 ![image](https://github.com/pritamhazra21/WIT/assets/75198912/cae873e9-e2b0-4df4-914c-de80c0ff1220)
 
@@ -308,6 +306,10 @@ IP header includes many relevant information including Version Number, which, in
 7. Source Address (128-bits): This field indicates the address of originator of the packet.
 
 8. Destination Address (128-bits): This field provides the address of intended recipient of the packet.
+
+## Difference IPv4 and IPv6
+
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/a0f9d028-caae-46f1-b47b-3b7b339f7e54)
 
 ## IP Subnetting and addressing (1L):
 ## Classful and Classless Addressing,
