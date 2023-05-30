@@ -193,6 +193,7 @@ General procedure is :-
 + This data is unlocked by the private key of the system and is send to the server.
 + Server after receiving this data verifies the local computer.
 + SSH creates a route and all the encrypted data are transferred through it with no security issues.
+![image](https://github.com/pritamhazra21/WIT/assets/75198912/8ff71e69-10f2-4f4a-a9de-dcb08f781a84)
 
 
 ## Firewall (1L):
