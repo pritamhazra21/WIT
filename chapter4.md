@@ -212,3 +212,10 @@ Application layer firewalls operate at the highest layer (Layer 7) of the OSI mo
 Proxy firewalls act as intermediaries between internal and external networks, handling communication on behalf of the requesting client. When a client makes a request to access a resource, the proxy firewall initiates a separate connection to the target server and retrieves the requested content. This separation provides an additional layer of security by hiding the internal network details and IP addresses from external entities. Proxy firewalls can also perform deep inspection of traffic, filtering out malicious content and providing additional security features like caching and content filtering.
 
 Firewalls can be implemented as hardware devices, software applications, or a combination of both. They form an essential part of network security strategies, helping organizations enforce security policies, control access to resources, and protect against unauthorized access and malicious activities. Firewalls are often deployed in conjunction with other security measures, such as intrusion detection/prevention systems (IDS/IPS), antivirus software, and virtual private networks (VPNs), to create a layered defense approach.
+
+## Firewall vs VPN
+
++ Firewalls prevent cyber attacks by building a strong protective wall to protect user’s confidential data. On the other hand VPN keep your location unknown to others by creating a proxy network for secure connection.
++ VPN allows you to access the restricted sites with a secure connection, while firewall can only create a layer of restrictions that you have accessed.
++ Firewalls use your choice to block access to certain sites. While using a VPN, one can access the same site over a long period of time.
++ Firewalls focus on blocking websites. While VPN, Focuses on a private connection. 
